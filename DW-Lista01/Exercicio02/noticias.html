@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Diário</title> 
+
+    <style>
+        body {
+            background-color: #09c74f18; 
+            font-family: 'Helvetica',sans-serif; 
+            text-align: center; 
+            padding: 20px;
+        }
+
+        #tituloprincipal {
+            font-size: 60px;
+            color: #06461c;
+            font-family: 'Trattatello, fantasy';
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 25px;
+            color: #073618; 
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #ff6600;
+            margin-bottom: 20px;
+            font-family: 'Blippo, fantasyv';
+        }
+
+        p{
+            font-size: 18px;
+            color: #8a3200; 
+            padding-bottom: 15px;
+        }
+
+        .divprincipal {
+            background-color: #09c74f36;
+            border-radius: 4px;
+            margin: auto;
+            height: auto; /*altura*/
+            width: 85%; /*largura*/
+            max-width: 1000px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+    
+        }
+
+        .divprincipal img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 18px; 
+            margin-bottom: 10px;
+        }
+
+        .manchetes {
+            display: flex; 
+            justify-content: center; 
+            gap: 10%; /*distanciamento entre divs*/
+            padding: 10px;  
+        }
+
+        .noticiaprincipal {
+            background-color: #09c74f36;
+            border-radius: 4px;
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 20px; 
+        }
+
+        .noticiaprincipal img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="tituloprincipal">Jornal Diário</h1>
+    <p>Notícias do estado de Minas Gerais e do mundo em tempo real!</p>
+
+    <h2>Últimas Notícias</h2>
+
+    <div class="divprincipal">
+        <img src="imgBH.jpg" alt="Imagem ilustrativa de uma cirurgia">
+        <h1>Mulher foge de hospital em Belo Horizonte sem pagar após colocar silicone e fazer lipo!</h1>
+        <p>Paciente ainda estava com acesso venoso quando fugiu do local.</p>
+    </div>
+
+    <div class="divprincipal">
+        <img src="imgFut.jpg" alt="Cruzeiro vs Mirassol">
+        <h1>Cruzeiro x Mirassol: onde assistir de graça, streaming e possíveis escalações!</h1>
+        <p>Equipes começam no próximo sábado (29) a caminhada no Campeonato Brasileiro 2025.</p>
+    </div>
+
+    <div class="divprincipal">
+        <img src="imgViceP.jpg" alt="Cruzeiro vs Mirassol">
+        <h1>Quem é Álvaro Damião, novo prefeito de Belo Horizonte após a morte de Fuad.</h1>
+        <p>Vice-prefeito do União Brasil estava à frente do Executivo municipal desde a internação do titular, em janeiro.</p>
+    </div>
+    
+    <h2>Principais Manchetes!</h2>
+       
+    <div class="manchetes">
+
+        <div class="noticiaprincipal">
+            <img src="imgCacau.jpg" alt="Imagem ilustrativa de cacau">
+            <h1>26 de Março - Dia do Cacau.</h1>
+            <p>Além de ser sucesso garantido na confeitaria, a fruta também traz muitos benefícios à saúde!</p>
+        </div>       
+        
+        <div class="noticiaprincipal">
+            <img src="imgSauna.jpg" alt="Imagem ilustrativa de aluno com calor">
+            <h1>Saunas de Aula!</h1>
+            <p>Entenda como o calor tem dificultado o aprendizado dos estudantes das instituições de áreas periféricas.</p>
+        </div>
+    </div>
+            
+</body>
+</html>
