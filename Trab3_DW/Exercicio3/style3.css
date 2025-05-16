@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 50px auto 50px auto 30px;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    height: 100vh;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none; /*remove marcadores da lista (* - pontinho) */
+    gap: 20px;
+}
+
+.menu a{
+    text-decoration: none; /*remove sublinhados*/
+    color: white;
+}
+
+.inicio{
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: white;
+}
+
+.textoinicial{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoinicial h2{
+    margin-bottom: 10px;
+}
+
+img{
+    height: 150px;
+    width: 300px;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    gap:15px;
+    padding: 20px;
+}
+
+.projeto{
+    background-color: white;
+    text-align: center; 
+    align-content: center;
+    border-radius: 10px;
+}
+
+.projeto h3{
+    margin-bottom: 8px;
+}
+
+#textoprojeto{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rodape{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/*iphone SE - telas pequenas*/
+@media screen and (min-width: 375px) and (max-width: 667px){
+    .container{
+        grid-template-rows: auto auto auto auto auto;
+        height: auto;
+    }
+
+    .topo{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+
+    .inicio{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .textoinicial h2{
+        font-size: 30px;
+    }
+
+    .textoinicial p{
+        font-size: 20px;
+    }
+
+    img{
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .projetos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .projeto{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .projeto h3{
+        font-size: 20px;
+    }
+
+    #textoprojeto{
+        font-size: 20px;
+    }
+
+    .rodape{
+        font-size: 15px;
+    }
+}
+
+/*Asus Zenbook - tablet*/ 
+@media screen and (min-width: 853px) and (max-width: 1280px) { 
+    .container{ 
+        grid-template-rows: auto auto auto auto auto; 
+        height: auto; 
+    } 
+
+    .topo{ 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 20px; 
+        height: 50px; 
+        font-size: 25px; 
+    } 
+
+    .menu ul{ 
+        flex-direction: row; 
+        gap: 20px;
+    } 
+
+    .menu a{ 
+        font-size: 20px; 
+    } 
+
+    .inicio{ 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        padding: 30px; 
+    } 
+
+    img{ 
+        width: 100%; 
+        max-width: 400px; 
+        height: auto; 
+        margin-bottom: 25px; 
+    } 
+
+    .textoinicial{ 
+        align-items: center; 
+    } 
+
+    .textoinicial h2{
+        font-size: 40px; 
+    } 
+    
+    .textoinicial p{ 
+        font-size: 30px; 
+    } 
+    
+    .projetos{ 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto auto; 
+        gap: 25px; 
+        padding: 30px; 
+    } 
+
+    .projeto{ 
+        padding: 20px; 
+        font-size: 30px; 
+    } 
+    
+    .projeto h3{ 
+        font-size: 35px;
+    } 
+    
+    #textoprojeto{ 
+        font-size: 25px;
+    } 
+
+    .rodape{ 
+        font-size: 25px; 
+        padding: 25px; 
+    } 
+}
+

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 40px auto auto 40px; /* 4 linhas - cabecalho, rosas, roxas, rodape */
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(60, 60, 255);
+}
+
+.cabecalho {
+    background-color: #40cf45; 
+}
+
+.rosas {
+    display: grid;
+    grid-template-columns: auto auto auto; /* 3 blocos rosa*/
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rosa {
+    background-color: #ff1e8b;
+    border-radius: 5px;
+}
+
+.roxas {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ; /* 6 blocos roxo*/
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.roxa {
+    background-color: #8b008b;
+    border-radius: 5px;
+}
+
+.rodape {
+    background-color: #ff4c15; 
+}

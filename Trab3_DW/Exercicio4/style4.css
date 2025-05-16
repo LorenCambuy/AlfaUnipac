@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: #ffe3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #383b42;
+}
+
+#titulo{
+    margin-bottom: 10px;
+}
+
+.tabuleiro{
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 120px 120px;
+    gap: 5px;
+}
+
+.cartas{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.cartas input{
+    display: none;
+}
+
+.frente, .verso{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*define se a face posterior de um elemento deve ou não ser visível quando o usuário estiver de frente para ele*/
+    border-radius: 10px;
+}
+
+.frente{
+    background: #ff7070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verso{
+    transform: rotateY(180deg); /*rotação*/
+    transition: transform 0.20s;
+}
+
+.verso img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+input:checked ~ .frente{
+    transform: rotateY(180deg); /*rotação*/
+}
+
+input:checked ~ .verso{
+    transform: rotateY(0deg); /*rotação*/
+}
+

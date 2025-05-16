@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 100px 100px; /*define a quant de colunas*/
+    grid-template-rows: 100px 100px; /*define a quant de linhas*/
+    justify-content: center; /*centraliza horizontalmente*/
+    align-content: center; /*centraliza verticalmente*/
+    height: 100vh; 
+    gap: 10px;
+}
+
+#div1{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#div2{
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#div3{
+    background-color: rgb(3, 228, 3);
+    border-radius: 10px;
+}
+
+#div4{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
